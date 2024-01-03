@@ -7,9 +7,22 @@
 
 '''
 3.2 Дан список list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
-   - получите сумму всех чисел,
+   - получите сумму всех чисел (done),
    - распечатайте все строки, где есть буква 'a'
 '''
+# list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
+# i = 0
+# sum_num = 0
+# result = ''
+# for i in range(len(list_1)):
+#     if type(list_1[i]) == int:
+#          sum_num = sum_num + list_1[i]
+#     elif type(list_1[i]) == str and list_1[i].find('a') >= 0:
+#          result = result + list_1[i] + ' '
+#     else:
+#          continue
+# print(sum_num)
+# print(result)
 
 
 '''
