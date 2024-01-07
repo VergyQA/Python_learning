@@ -1,15 +1,21 @@
 '''
 3.1. Дан список my_list = ['a', 'b', [1, 2, 3], 'd']. Распечатайте значения 1, 2, 3
 '''
+# version num.1
 # my_list = ['a', 'b', [1, 2, 3], 'd']
 # item_1, item_2, item_3, item_4 = my_list
 # print(item_3[0], item_3[1], item_3[2], sep = ', ')
+
+# version num.2
+# my_list = ['a', 'b', [1, 2, 3], 'd']
+# print(f'{my_list[2][0]}, {my_list[2][1]}, {my_list[2][2]}')
 
 '''
 3.2 Дан список list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
    - получите сумму всех чисел (done),
    - распечатайте все строки, где есть буква 'a'
 '''
+# version num.1
 # list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
 # i = 0
 # sum_num = 0
@@ -24,10 +30,26 @@
 # print(sum_num)
 # print(result)
 
+# version num.2
+# list_1 = ['Hi', 'ananas', 2, None, 75, 'pizza', 36, 100]
+# result_sum = 0
+# result_a_char = []
+# for i in range(len(list_1)):
+#     if isinstance(list_1[i], int) == True:
+#         result_sum = result_sum + list_1[i]
+#     elif isinstance(list_1[i], str) == True and list_1[i].find('a') >= 0:
+#         result_a_char.append(list_1[i])
+#     else:
+#         continue
+# print(result_sum, result_a_char, sep = '\n')
 
 '''
 3.3. Превратите лист ['cat', 'dog', 'horse', 'cow'] в кортеж
 '''
+
+# lst = ['cat', 'dog', 'horse', 'cow']
+# tpl = tuple(lst)
+# print(tpl)
 
 '''
 3.4. Напишите программу, которая определяет, какая семья больше. 
