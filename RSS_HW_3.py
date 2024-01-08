@@ -57,6 +57,16 @@
       2) Членов семьи нужно перечислить через запятую. 
      Ожидаемый результат - программа выводит семью с бОльшим составом. Если состав одинаковый, print("Equal')
 '''
+family_1 = input('Введите имена членов первой семьи через запятую: ')
+family_2 = input('Введите имена членов второй семьи через запятую: ')
+family_1 = family_1.split(', ')
+family_2 = family_2.split(', ')
+if len(family_1) > len(family_2):
+    print(family_1)
+elif len(family_1) < len(family_2):
+    print(family_2)
+else:
+    print('Equal')
 
 '''
 3.5. Создайте словарь film c ключами title, director, year, budget, main_actor, slogan. 
